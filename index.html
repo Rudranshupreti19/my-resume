@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Website</title>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="portfolio.css">
+</head>
+<body>
+
+    <div id="loader">
+        <div id="wrapperload">
+            
+            <div class="elem">
+                <h3>Font-end web development</h3>
+            </div>
+            <div class="elem">
+                <h3>loves to help brands.</h3>
+            </div>
+            <div class="elem">
+                <h1>Rudransh upreti</h1>
+            </div>
+        </div>
+    </div>
+
+    <div id="bg">
+        <nav>
+            <img class="navitem" src="1688072800984-thumbnail.jpg" alt="">
+            <div id="links">
+                <a class="navitem" href="#">Home</a>
+                <a class="navitem" href="contact.html">Contact</a>
+                <i class="navitem ri-search-line"></i>
+                <i id="menu" class="navitem ri-menu-2-line"></i>
+            </div>
+        </nav>
+        <div id="sections">
+        
+            <div id="left">
+                <div id="smline"></div>
+                <h4 class="leftitem">Hello, I am 👋</h4>
+                <h1>Rudransh upreti</h1>
+                <h5 class="leftitem">a designer from <span id="lblue">India.</span></h5>
+                
+                <div class="leftitem" id="contact">
+                    <h3 >Contact me</h3>
+                    <h6>Email : <span>rudranshupreti17@gmail.com</span></h6>
+                    <h6>Contact Number: <span>+91-8851993705</span></h6>
+                </div>
+            </div>
+            <div id="right">
+                <img src="mainImage.png" alt="">
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js" integrity="sha512-IQLehpLoVS4fNzl7IfH8Iowfm5+RiMGtHykgZJl9AWMgqx0AmJ6cRWcB+GaGVtIsnC4voMfm8f2vwtY+6oPjpQ==" crossorigin="anonymous"></script>
+    <script src="portfolio.js"></script>
+
+    <script>
+        var menu = document.querySelector('#menu');
+        var bg = document.querySelector('#bg');
+
+        menu.addEventListener('click', function(){
+            bg.style.transform = 'scale(.8)';
+            bg.style.borderRadius = '10px';
+            bg.style.boxShadow = '0 150px 45px -100px rgba(0,0,0,0.2)';
+        })
+    </script>
+    
+</body>
+</html>
